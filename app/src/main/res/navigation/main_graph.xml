@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.exsample.android_saas.fragments.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.exsample.android_saas.fragments.main.history.HistoryFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_history"/>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.exsample.android_saas.fragments.main.profile.ProfileFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.exsample.android_saas.fragments.main.book.BookFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_book" />
+
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.exsample.android_saas.fragments.main.favourites.FavouritesFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.exsample.android_saas.fragments.main.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+
+</navigation>
